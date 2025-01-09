@@ -1,0 +1,21 @@
+title: hS: Out-of-Order Shell-Script Execution
+date: 2025-01-17
+presenter: Georgios Liargkovas, Columbia University
+category: seminars
+time: 17:30
+
+Shell programs are pervasive, acting as the glue between commands with complex, system-wide effects. 
+Because shell scripts invoke whole commands---written in a variety of languages---it is very challenging to optimize them. 
+We introduce Sys, which brings out-of-order, speculative execution to shell scripts. 
+Sys dynamically reorders commands, inferring their runtime dependencies and managing the speculative reordering in light of these dependencies. 
+Sys comprises three components: system-call monitoring and sandboxing to collect dependencies and selectively commit command effects, 
+an orchestrator that ensures correct execution, and a set of domain specific optimizations to reduce misspeculations. 
+Combined, these techniques offer up to 7.3× speedups compared to an ordinary, sequential shell---without any developer involvement or command annotations.
+
+Bio: Georgios Liargkovas is a PhD student at Columbia University advised by Kostis Kaffes. 
+His research focuses on OS scheduling, with an interest in leveraging ML to enhance scheduling decisions.
+He holds a BS in Management Science and Technology from Athens University of Economics and Business, 
+where he conducted empirical software engineering research at BALab advised by Diomidis Spinellis.
+He has also worked on shell-script parallelization with the Atlas Systems Group at Brown University. 
+His interests broadly include ML for Systems, cloud computing, and software engineering. 
+Outside academia, he enjoys running, music, and cooking.
